@@ -78,7 +78,7 @@ export default function LoginPage() {
               </p>
 
               <h1 className="mt-6 text-4xl font-bold leading-tight">
-                Welcome back to your STAD portal
+                Welcome back to your STAAD portal
               </h1>
 
               <p className="mt-5 leading-7 text-red-100">

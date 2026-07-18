@@ -34,7 +34,7 @@ const sampleEvents = [
       "Notebook and pen",
       "Water bottle",
     ],
-    contact: "STAD Office — cityu_studentaffairs@city.edu.my",
+    contact: "STAAD Office — cityu_studentaffairs@city.edu.my",
   },
   {
     id: "2",
@@ -59,7 +59,7 @@ const sampleEvents = [
       "3:45 PM — Closing",
     ],
     itemsToBring: ["Notebook", "Pen", "Student identification card"],
-    contact: "STAD Office — stad@city.edu.my",
+    contact: "STAAD Office — cityu_studentaffairs@city.edu.my",
   },
 ];
 

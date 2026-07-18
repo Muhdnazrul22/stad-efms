@@ -22,7 +22,7 @@ type EventErrors = Partial<Record<keyof EventForm, string>>;
 const initialForm: EventForm = {
   title: "",
   category: "",
-  organiser: "Student Affairs Department",
+  organiser: "Student Affairs and AlumniDepartment",
   date: "",
   startTime: "",
   endTime: "",

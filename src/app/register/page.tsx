@@ -176,7 +176,7 @@ export default function RegisterPage() {
             <p className="font-semibold text-red-700">Create Account</p>
 
             <h1 className="mt-2 text-3xl font-bold text-gray-900">
-              Join the STAD portal
+              Join the STAAD portal
             </h1>
 
             <p className="mt-3 max-w-2xl text-gray-600">

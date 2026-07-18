@@ -55,7 +55,7 @@ export default function FacilitiesPage() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <div>
-              <p className="text-lg font-bold text-red-700 sm:text-xl">STAD EFMS</p>
+              <p className="text-lg font-bold text-red-700 sm:text-xl">STAAD EFMS</p>
               <p className="text-xs text-gray-500">City University Malaysia</p>
             </div>
           </Link>

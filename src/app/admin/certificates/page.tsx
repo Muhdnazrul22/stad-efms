@@ -26,7 +26,7 @@ const initialCertificates: CertificateRecord[] = [
     eventTitle: "Campus Community Day",
     attendance: "Completed",
     evaluation: "Completed",
-    certificateNumber: "CITYU-STAD-2026-0001",
+    certificateNumber: "CITYU-STAAD-2026-0001",
     status: "Issued",
   },
   {
@@ -62,7 +62,7 @@ export default function AdminCertificatesPage() {
           ? {
               ...record,
               status: "Issued",
-              certificateNumber: `CITYU-STAD-DEMO-${Date.now()
+              certificateNumber: `CITYU-STAAD-DEMO-${Date.now()
                 .toString()
                 .slice(-6)}`,
             }

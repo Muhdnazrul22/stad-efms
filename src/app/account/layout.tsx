@@ -15,7 +15,7 @@ export default function AccountLayout({
       <header className="border-b border-gray-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-6">
           <Link href="/" className="leading-tight">
-            <p className="text-xl font-bold text-red-700">STAD EFMS</p>
+            <p className="text-xl font-bold text-red-700">STAAD EFMS</p>
             <p className="text-xs text-gray-500">
               City University Malaysia
             </p>
@@ -54,7 +54,7 @@ export default function AccountLayout({
               </p>
 
               <p className="mt-2 text-sm text-gray-500">
-                Manage your STAD activities.
+                Manage your STAAD activities.
               </p>
             </div>
 

@@ -43,7 +43,7 @@ export default function Home() {
       <section className="bg-red-700 px-6 py-24 text-white">
         <div className="mx-auto max-w-7xl">
           <p className="mb-4 font-medium uppercase tracking-widest text-red-100">
-            Student Affairs Department
+            Student Affairs and Alumni Department
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold md:text-6xl">
@@ -109,7 +109,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <p className="font-semibold">City University Malaysia</p>
           <p className="mt-2 text-sm text-gray-400">
-            Student Affairs Department
+            Student Affairs and Alumni Department
           </p>
         </div>
       </footer>

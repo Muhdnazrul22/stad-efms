@@ -39,11 +39,11 @@ const initialUsers: SystemUser[] = [
   },
   {
     id: "user-003",
-    fullName: "STAD Officer",
+    fullName: "STAAD Officer",
     universityId: "STAFF-001",
-    email: "stad.officer@example.com",
+    email: "cityu_studentaffairs@city.edu.my",
     category: "Staff",
-    role: "STAD Officer",
+    role: "STAAD Officer",
     status: "Active",
   },
   {
@@ -110,7 +110,7 @@ export default function AdminUsersPage() {
             <option>All roles</option>
             <option>Student</option>
             <option>Committee</option>
-            <option>STAD Officer</option>
+            <option>STAAD Officer</option>
             <option>Facilities Officer</option>
             <option>Administrator</option>
           </select>

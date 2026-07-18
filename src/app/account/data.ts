@@ -70,7 +70,7 @@ export const eventRegistrations: EventRegistration[] = [
     venue: "Multipurpose Hall, Cyberjaya Campus",
     registrationDate: "15 July 2026",
     status: "Confirmed",
-    qrToken: "STAD-EVENT-001-TEST-STUDENT",
+    qrToken: "STAAD-EVENT-001-TEST-STUDENT",
   },
   {
     id: "reg-002",

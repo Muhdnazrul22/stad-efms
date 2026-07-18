@@ -55,7 +55,7 @@ export default function AdminNavigation() {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="STAD administration navigation">
+    <nav aria-label="STAAD administration navigation">
       <div className="flex gap-2 overflow-x-auto pb-2 lg:flex-col lg:overflow-visible lg:pb-0">
         {adminNavigation.map((item) => {
           const isActive = item.exact

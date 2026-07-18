@@ -15,7 +15,7 @@ export default function AdminLayout({
         <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-5 py-4 sm:px-6">
           <Link href="/admin" className="leading-tight">
             <p className="text-xl font-bold text-red-700">
-              STAD Administration
+              STAAD Administration
             </p>
 
             <p className="text-xs text-gray-500">
@@ -26,7 +26,7 @@ export default function AdminLayout({
           <div className="flex items-center gap-3">
             <div className="hidden text-right sm:block">
               <p className="text-sm font-semibold text-gray-900">
-                STAD Officer
+                STAAD Officer
               </p>
 
               <p className="text-xs text-gray-500">

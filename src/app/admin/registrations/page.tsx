@@ -10,7 +10,7 @@ export default function AdminRegistrationsPage() {
       <AdminPageHeader
         eyebrow="Registration Management"
         title="Event Registrations"
-        description="Review participant information and registration status for STAD events."
+        description="Review participant information and registration status for STAAD events."
       />
 
       <section className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">

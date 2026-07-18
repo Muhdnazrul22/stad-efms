@@ -29,7 +29,7 @@ export default function AdminDashboardPage() {
     <div className="space-y-7">
       <section className="rounded-2xl bg-red-700 p-7 text-white shadow-sm sm:p-9">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-100">
-          STAD Administration
+          STAAD Administration
         </p>
 
         <h1 className="mt-3 text-3xl font-bold sm:text-4xl">
