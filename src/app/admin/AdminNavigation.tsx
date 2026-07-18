@@ -29,6 +29,26 @@ const adminNavigation = [
     href: "/admin/bookings",
     label: "Bookings",
   },
+  {
+    href: "/admin/committee",
+    label: "Committee",
+  },
+  {
+    href: "/admin/certificates",
+    label: "Certificates",
+  },
+  {
+    href: "/admin/reports",
+    label: "Reports",
+  },
+  {
+    href: "/admin/users",
+    label: "Users",
+  },
+  {
+    href: "/admin/settings",
+    label: "Settings",
+  },
 ];
 
 export default function AdminNavigation() {

@@ -64,15 +64,29 @@ export function StatusBadge({ status }: { status: string }) {
     Confirmed: "bg-green-100 text-green-800",
     Approved: "bg-green-100 text-green-800",
     Available: "bg-green-100 text-green-800",
+    Active: "bg-green-100 text-green-800",
+    Eligible: "bg-green-100 text-green-800",
+    Issued: "bg-green-100 text-green-800",
+
     "Checked Out": "bg-blue-100 text-blue-800",
     "Checked In": "bg-blue-100 text-blue-800",
+    Completed: "bg-blue-100 text-blue-800",
+
     Pending: "bg-amber-100 text-amber-800",
     Draft: "bg-amber-100 text-amber-800",
+    Processing: "bg-amber-100 text-amber-800",
+
     Closed: "bg-gray-200 text-gray-700",
     Cancelled: "bg-gray-200 text-gray-700",
+    Expired: "bg-gray-200 text-gray-700",
+    Inactive: "bg-gray-200 text-gray-700",
+
     Absent: "bg-red-100 text-red-800",
     Rejected: "bg-red-100 text-red-800",
     Unavailable: "bg-red-100 text-red-800",
+    Suspended: "bg-red-100 text-red-800",
+    "Not Eligible": "bg-red-100 text-red-800",
+
     Maintenance: "bg-orange-100 text-orange-800",
   };
 
