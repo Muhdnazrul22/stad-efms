@@ -2,87 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-
-type Facility = {
-  id: number;
-  name: string;
-  type: string;
-  campus: string;
-  location: string;
-  capacity: number;
-  equipment: string[];
-  hours: string;
-  availability: "Available" | "Limited" | "Booked";
-};
-
-const facilities: Facility[] = [
-  {
-    id: 1,
-    name: "Multipurpose Hall",
-    type: "Event Space",
-    campus: "Cyberjaya",
-    location: "Block A, Level 2",
-    capacity: 250,
-    equipment: ["Stage Lighting", "Sound System", "Projector"],
-    hours: "7:00 AM – 10:00 PM",
-    availability: "Available",
-  },
-  {
-    id: 2,
-    name: "Seminar Room",
-    type: "Meeting Space",
-    campus: "Cyberjaya",
-    location: "Block B, Level 1",
-    capacity: 60,
-    equipment: ["HD Display", "Conference Phone", "Whiteboard"],
-    hours: "8:00 AM – 8:00 PM",
-    availability: "Limited",
-  },
-  {
-    id: 3,
-    name: "Sports Hall",
-    type: "Recreation",
-    campus: "Main",
-    location: "Sports Complex",
-    capacity: 120,
-    equipment: ["Basketball Hoop", "Badminton Nets", "Sound System"],
-    hours: "6:00 AM – 11:00 PM",
-    availability: "Available",
-  },
-  {
-    id: 4,
-    name: "Recording Studio",
-    type: "Creative Space",
-    campus: "Main",
-    location: "Media Centre, Level 3",
-    capacity: 12,
-    equipment: ["Audio Interface", "Microphones", "Editing Workstation"],
-    hours: "9:00 AM – 9:00 PM",
-    availability: "Limited",
-  },
-  {
-    id: 5,
-    name: "Meeting Room",
-    type: "Meeting Space",
-    campus: "Penang",
-    location: "Administration Wing",
-    capacity: 30,
-    equipment: ["Video Conferencing", "Whiteboard", "Wi-Fi"],
-    hours: "8:30 AM – 6:30 PM",
-    availability: "Booked",
-  },
-  {
-    id: 6,
-    name: "Student Activity Room",
-    type: "Student Space",
-    campus: "Cyberjaya",
-    location: "Student Centre, Level 1",
-    capacity: 45,
-    equipment: ["Tables", "Projector", "Relaxation Lounge"],
-    hours: "7:30 AM – 10:30 PM",
-    availability: "Available",
-  },
-];
+import { facilities } from "./data";
 
 const facilityTypes = ["All", ...Array.from(new Set(facilities.map((item) => item.type)))];
 const campuses = ["All", ...Array.from(new Set(facilities.map((item) => item.campus)))];
@@ -319,18 +239,18 @@ export default function FacilitiesPage() {
                     </dl>
 
                     <div className="mt-6 flex flex-col gap-2 sm:flex-row">
-                      <button
-                        type="button"
-                        className="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-700"
+                      <Link
+                        href={`/facilities/${facility.id}`}
+                        className="flex-1 rounded-lg border border-gray-300 px-4 py-2.5 text-center text-sm font-semibold text-gray-700 transition hover:border-red-500 hover:text-red-700"
                       >
                         View Details
-                      </button>
-                      <button
-                        type="button"
-                        className="flex-1 rounded-lg bg-red-700 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-red-800"
+                      </Link>
+                      <Link
+                        href={`/facilities/${facility.id}/book`}
+                        className="flex-1 rounded-lg bg-red-700 px-4 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-red-800"
                       >
                         Book Now
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </article>
