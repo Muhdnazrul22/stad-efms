@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -40,38 +41,57 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="bg-red-700 px-6 py-24 text-white">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-4 font-medium uppercase tracking-widest text-red-100">
-            Student Affairs and Alumni Department
-          </p>
+      <section className="relative min-h-[650px] overflow-hidden text-white sm:min-h-[700px]">
+  {/* Background photo */}
+  <Image
+    src="/images/staad-home.jpg"
+    alt="Students performing during a City University Malaysia event"
+    fill
+    priority
+    className="object-cover object-[center_58%]"
+    sizes="100vw"
+  />
 
-          <h1 className="max-w-4xl text-4xl font-bold md:text-6xl">
-            Connecting Students, Building Experiences
-          </h1>
+  {/* Dark overlay to make the text readable */}
+  <div className="absolute inset-0 bg-black/40" />
 
-          <p className="mt-6 max-w-2xl text-lg text-red-100">
-            Register for university events and book campus facilities through
-            one convenient platform.
-          </p>
+  {/* Red branded overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-red-950/95 via-red-900/70 to-black/20" />
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/events"
-              className="rounded-lg bg-white px-6 py-3 text-center font-semibold text-red-700"
-            >
-              Browse Events
-            </Link>
+  {/* Hero content */}
+  <div className="relative z-10 mx-auto flex min-h-[650px] max-w-7xl items-center px-6 py-20 sm:min-h-[700px] lg:px-8">
+    <div className="max-w-4xl">
+      <p className="text-sm font-semibold uppercase tracking-[0.22em] text-red-100 sm:text-base">
+        Student Affairs and Alumni Department
+      </p>
 
-            <Link
-              href="/facilities"
-              className="rounded-lg border border-white px-6 py-3 text-center font-semibold text-white"
-            >
-              Book a Facility
-            </Link>
-          </div>
-        </div>
-      </section>
+      <h1 className="mt-6 text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
+        Connecting Students, Building Experiences
+      </h1>
+
+      <p className="mt-7 max-w-2xl text-lg leading-8 text-gray-100 sm:text-xl">
+        Register for university events and book campus facilities through one
+        convenient platform.
+      </p>
+
+      <div className="mt-10 flex flex-wrap gap-4">
+        <Link
+          href="/events"
+          className="rounded-xl bg-white px-7 py-4 text-lg font-semibold text-red-700 shadow-lg transition hover:bg-red-50"
+        >
+          Browse Events
+        </Link>
+
+        <Link
+          href="/facilities"
+          className="rounded-xl border border-white/80 bg-black/10 px-7 py-4 text-lg font-semibold text-white backdrop-blur-sm transition hover:bg-white/15"
+        >
+          Book a Facility
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="px-6 py-16">
         <div className="mx-auto max-w-7xl">
@@ -105,9 +125,12 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-gray-950 px-6 py-10 text-white">
+           <footer className="bg-gray-950 px-6 py-10 text-white">
         <div className="mx-auto max-w-7xl">
-          <p className="font-semibold">City University Malaysia</p>
+          <p className="font-semibold">
+            City University Malaysia
+          </p>
+
           <p className="mt-2 text-sm text-gray-400">
             Student Affairs and Alumni Department
           </p>
